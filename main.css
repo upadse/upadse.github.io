@@ -1,0 +1,190 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    .container {
+        padding: 0 100px 0 100px;
+    }
+    
+    .menu li {
+        display: block;
+        padding: 15px;
+        font-weight: 600;
+    }
+    
+    .menu {
+        display: flex;
+        background-image: linear-gradient(to right, #4e4e4e, #767676, #c1c1c1);
+        height: 75px;
+    }
+    
+    .menu li:first-child {
+        margin-right: auto;
+    }
+    
+    body {
+        background-image: linear-gradient(to bottom, #f5f4f4 25%, #8a8a8a, #3e3e3e);
+    }
+    
+    a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1.1em;
+        text-transform: uppercase;
+        position: relative;
+        top: 10%;
+        bottom: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .gradiente {
+        float: right;
+        padding-right: 20px;
+    }
+    
+    .sobre {
+        height: 400px;
+        margin-top: 100px;
+    }
+    
+    .sobre h1,
+    .comunidade h1 {
+        color: #2a2a2a;
+        font-size: 4rem;
+        z-index: 0;
+        opacity: 0.5;
+    }
+    
+    .ouvir h1,
+    .contact h1 {
+        color: #f1f1f1;
+        font-size: 4rem;
+        z-index: 0;
+        opacity: 0.5;
+    }
+    
+    .info-upadse {
+        max-width: 900px;
+        background-color: #a7a6a6;
+        box-shadow: 10px 10px 2.5rem #000000;
+        padding: 50px;
+        position: relative;
+        top: -16px;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+    
+    .info-upadse p {
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: #e9e9e9;
+    }
+    
+    .info-upadse p:nth-child(2),
+    .info-upadse p:last-child {
+        margin-top: 30px;
+    }
+    
+    .links {
+        text-align: center;
+    }
+    
+    .btn {
+        text-align: center;
+    }
+    
+    .ouvir a.aOuvir {
+        padding: 12px 25px;
+        background-color: none;
+        color: #d8d8d8;
+        border-radius: 10px;
+        border: 2px solid #ed5565;
+        font-size: 15px;
+        letter-spacing: 1px;
+        position: relative;
+        top: 80px;
+        overflow: hidden;
+        transition: 0.5s;
+        display: inline-block;
+    }
+    
+    .ouvir a.aOuvir:hover {
+        color: #faecec;
+    }
+    
+    .ouvir a.aOuvir::before {
+        content: '';
+        background-color: #864444;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 0%;
+        z-index: -1;
+        transition: 0.5s;
+    }
+    
+    .ouvir a.aOuvir:hover::before {
+        height: 100%;
+    }
+    
+    .ouvir img {
+        margin: 60px;
+    }
+    
+    .contact {
+        margin-top: 50px;
+    }
+    
+    .chama {
+        color: #2c2c2c;
+        max-width: 865px;
+        font-size: 30px;
+        text-align: center;
+        padding-left: 280px;
+    }
+    
+    form input,
+    form textarea {
+        display: block;
+        width: 500px;
+        padding: 20px;
+        background-color: #3e3e3e;
+        border: 3px solid #9a9a9a;
+        border-radius: 7px;
+        margin: 20px 0;
+        outline: none;
+        font-size: 1.2rem;
+        color: #b2b2b2;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+    }
+    
+    form input:last-child {
+        width: 150px;
+        background-color: #ed5565;
+        border: none;
+        cursor: pointer;
+        color: #f1f1f1;
+    }
+    
+    footer hr {
+        border: 2px solid #777777;
+    }
+    
+    footer p {
+        text-align: center;
+        color: #777777;
+        font-size: 1.2rem;
+        padding: 30px 0;
+    }
